@@ -1,0 +1,73 @@
+
+  .hover-underline a:link {
+    text-decoration: none;
+    
+  }
+ 
+  .hover-underline a:visited {
+    text-decoration: none;
+  }
+  
+  .hover-underline a:hover {
+    text-decoration: none;
+  }
+  
+  .hover-underline a:active {
+    text-decoration: none;
+  }
+  #footer{
+          display: grid;
+          grid-template-columns: repeat(5,1fr);
+         padding:20px 40px;
+  }
+  .footerChild{
+     margin:2px 20px;
+    display:flex;
+    flex-direction:column;
+  }
+  .footerChild  .hover-underline a {
+    color: black;
+    font-size: 17px;
+  }
+
+  .footerChild  .hover-underline{
+    margin: 8px 0px;
+  }
+  .heading{
+    
+    color: black;
+  }
+  
+  .hover-underline img{
+    height:20px;
+      margin-top:2px;
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
+  /* meidum screens */
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+         #footer{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+         padding:40px;
+  }
+   
+        }
+  
+  /* small screens */
+        @media all and (min-width: 220px) and (max-width: 767px) {
+          #footer{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          padding:40px;
+           }
+        
+        }
+  

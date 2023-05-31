@@ -1,0 +1,302 @@
+/* ALL LI */
+
+li {
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* body */
+
+body {
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Code for navbar */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.navlist--primary,
+.drop,
+.navlist + .navlist {
+  padding-left: 0.75em;
+}
+
+/* CODE FOR NAVBAR DROPDOWN */
+
+.dropdown .drop-content {
+  display: none;
+  position: relative;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.dropdown > .drop-content > .drop-col {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: -1;
+}
+
+.dropdown:hover > .drop-content {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  position: absolute;
+  transition: ease;
+}
+
+.drop-content {
+  background-color: white;
+  width: auto;
+  overflow: hidden;
+  justify-content: flex-start;
+  top: 12%;
+  height: 400px;
+  left: 10%;
+  border-radius: 7px;
+  transition: ease-out;
+  pointer-events: none;
+  max-width: 85%;
+}
+
+.drop-col > h1 {
+  line-height: 3;
+  font-size: 0.9em;
+  font-family: "Open sans";
+}
+
+.drop-col > p {
+  font-family: "Open sans";
+  line-height: 2.5;
+  font-size: 0.9em;
+  opacity: 1;
+}
+
+.learn-para > .drop-col > p {
+  max-width: 90%;
+  line-height: 1.8;
+  font-size: 0.9em;
+}
+
+.learn-para > .drop-col > h1 {
+  max-width: 90%;
+  padding: 0.44em 0;
+  line-height: 1.6;
+  font-weight: 600;
+  font-size: 0.94rem;
+}
+
+.nav-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0.66em 0;
+  width: 70%;
+  padding-left: 1em;
+}
+
+.nav-col > h1 {
+  font-size: 0.94em;
+  line-height: 3;
+  font-family: "Open sans";
+}
+
+.nav-col > p {
+  font-size: 0.87rem;
+  line-height: 2.5;
+  font-family: "Open sans";
+}
+
+.learn-para {
+  height: 47vh;
+}
+
+.dropdown {
+  float: left;
+}
+
+
+.drop {
+  display: flex;
+  align-items: center;
+}
+.navflex{
+  display: flex;
+  align-items: left;
+}
+
+.navlist--primary > .drop > .navlist:hover {
+  color: #00c4cc;
+}
+
+.navlist--primary > .drop > .navlist {
+  font-size: 1.08rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  align-items: center;
+  font-weight: 400;
+}
+
+/* CANVA LOGO */
+.logo{
+  width: 15%;
+}
+.logo > img {
+  height: 90%;
+  width: 90%;
+  padding: 0px 10%;
+  position: relative;
+}
+
+/* NAVBAR RIGHT SIDE */
+
+.navlist--secondary {
+  padding: 0.55em 1em;
+}
+
+.navlist-icon {
+  padding: 0 0.67em;
+}
+
+.icon {
+  font-size: 1.35rem;
+  padding: 0.53rem 0.63rem;
+  display: inline-block;
+  position: relative;
+}
+.search {
+  padding: 0.68em 0.68em;
+  font-size: 0.75rem;
+  font-weight: bolder;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  border: 0.5px solid black;
+}
+
+.icon:hover {
+  background-color: rgb(230, 230, 230);
+  display: block;
+  border-radius: 4px;
+}
+
+.signupbtn {
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  padding: 0.68em 0.68em;
+  font-size: 1.05rem;
+  font-weight: bolder;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+}
+
+.loginbtn {
+  color: black;
+  background-color: #f1f3f5;
+  border: none;
+  padding: 0.68em 0.68em;
+  font-size: 1.05rem;
+  font-weight: bolder;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+}
+/* HORIZANTAL LINE AGTER NAVBAR */
+
+hr {
+  opacity: 0.4;
+  padding-bottom: 2em;
+}
+
+/* meidum screens */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        margin: 0 auto;
+        padding: 0.66em 0;
+        width: 70%;
+        padding-left: 1em;
+     }
+
+  .menu {
+   height: auto;
+  }
+  .navflex{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+  }
+  .logo{
+    width: 200px;
+    padding-left: 3%;
+  }
+  .logo > img {
+    height: 90%;
+    width: 90%;
+    padding: 0px 10%;
+    position: relative;
+  }
+}
+
+/* small screens */
+@media all and (max-width: 767px) {
+  .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        margin: 0 auto;
+        padding: 0.66em 0;
+        width: 100%;
+        padding-left: 1em;
+        
+     }
+
+     .menu {
+      height: auto;
+     }
+  .navflex{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+ 
+    .logo{
+      width: 200px;
+      padding-left: 3%;
+    }
+    .logo > img {
+      height: 90%;
+      width: 90%;
+      padding: 0px 10%;
+      position: relative;
+    } }
+}

@@ -1,0 +1,103 @@
+#pefect{
+    width: 90%;
+    margin: 40px auto;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+body{
+    cursor:auto;
+}
+#pefect h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.pefect-body{
+    display: flex;
+    margin-top: 40px;
+}
+
+.pefect-body .pefect-cart{
+text-align: center;
+margin: 10px 20px;
+}
+.pefect-body .pefect-cart p{
+    font-size: 17px;
+    margin: 20px 0px;
+}
+
+.pefect-body .pefect-cart h3 a{
+    display: inline-block;
+    background-color: blueviolet;
+    color: white;
+    padding: 2% ;
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+#book{
+    width: 90%;
+    margin: 40px auto;
+}
+#book h1{
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+#book-conatiner{
+    margin-top: 40px;
+    display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 10px;
+}
+#book-conatiner div{
+    text-align: center;
+}
+
+#book-conatiner div .poster{
+    width: 90%;
+    height: 300px;
+}
+
+  /* meidum screens */
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .pefect-body{
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+#pefect{
+    margin-top: 100px;
+}
+   
+#book-conatiner{
+    margin-top: 40px;
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 10px;
+}
+   }
+
+/* small screens */
+   @media all  and (max-width: 767px) {
+    .pefect-body{
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    #pefect{
+        margin-top: 100px;
+    }
+    #book-conatiner{
+        margin-top: 40px;
+        display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap: 10px;
+    }
+   }
